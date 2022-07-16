@@ -1,7 +1,7 @@
 
 // Завдання 1
 
-function exs_6_1() {
+const exs_6_1 =() => {
 
     let n = prompt("Введіть число")
 
