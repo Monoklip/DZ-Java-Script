@@ -31,11 +31,38 @@ const exs_6_1 =() => {
 // Завдання 2
 
 
+function exs_6_2_1() {
+
+    let n = +prompt(" Кількість чисел прогресії");
+    let b = +prompt("Знаменник");
+    let sum = 0;
+    let a = 1;
+
+    for(let i = 1; i <= n; i++) {
+
+        console.log(a);
+        sum = a +sum;
+        a = a*b;
+
+    }
+    console.log(`Сума: ${sum}`);    
+}
 
 
 
 
+function exs_6_2_2() {
 
+    let n = +prompt(" Кількість чисел прогресії");
+    let q = +prompt("Знаменник");
+    let sum = 0;
+    let b = 1;
+
+     n = b * (1-q**n) / (1-q)
+
+    console.log(n);
+
+}
 
 
 
@@ -47,3 +74,17 @@ const exs_6_1 =() => {
 
 
 
+const exs_6_3 = () => {
+
+    let a = +prompt("Введіть число від");
+    let b = +prompt("Введіть число до");    
+    let n = 2;
+    let i = 2;
+    for (i = a; n <= b , i <= b; n++, i++) {
+
+        if(i % n == 0 ) {
+
+            console.log(i);
+        }
+    }
+}

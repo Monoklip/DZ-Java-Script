@@ -55,26 +55,24 @@ function exs_5_2() {
 
 // ==============================================================
 
-// більше нічого не придумав
 
 function exs_5_3() {
 
-    let a = +prompt("Введіть число №1");
-    let b = +prompt("Введіть число №2");
-    let c = +prompt("Введіть чилос №3");
-    let d = +prompt("Введіть число №4");
+    function maxNumber() {
 
-    if (a > b && a > c && a > d){
-        alert(`Найбільше число: ${a}`);
-    } 
-    else if (b > a && b > c && b > d){
-        alert(`Найбільше число: ${b}`);
+        let max = arguments[0];
+        for(let i = 0; i < arguments.length; i++) {
+            if(i == 0) {
+                max = +prompt('Введіть число');
+            }
+            let a = +prompt('Введіть наступне число')
+            if(a > max) {
+                max = a;
+            }
+        }
+        console.log(max);
     }
-    else if(c > a && c > b && c > d){
-        alert(`Найбільше число: ${c}`);
-    }
-    else if (d > a && d > b && d > c){
-        alert(`Найбільше число: ${d}`);
-    }
+
+    maxNumber(1,2,3);
+
 }
-
