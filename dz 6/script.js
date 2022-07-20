@@ -78,13 +78,19 @@ const exs_6_3 = () => {
 
     let a = +prompt("Введіть число від");
     let b = +prompt("Введіть число до");    
-    let n = 2;
-    let i = 2;
-    for (i = a; n <= b , i <= b; n++, i++) {
 
-        if(i % n == 0 ) {
+    for (let i = a; i < b; i++) {
 
-            console.log(i);
+        for ( let n = 2; n < b; n++) {
+
+            if(i % n === 0 ) {
+                break;
+            }
+
+            else if (n == i - 1) {
+                console.log(i);
+            }
         }
     }
 }
+
