@@ -4,11 +4,9 @@ function exs_1() {
 
     let text = prompt("Введіть текст");
 
-    for(let i = 0; i < text.length; i++) {
-        if(text[i] == " ") {
-            console.log(text[i]);
-        }
-    }
+    let probil = text.split(' ');
+
+    console.log(probil.length - 1);
     
 }
 
@@ -40,11 +38,9 @@ function exs_3() {
 
     let text = prompt("Введіть текст");
 
-    for(let i = 0; i < text.length; i++) {
-        if(text[i] == " html ") {
-            console.log(text.search(html));
-        }
-    }
+    let textHtml = text.split('html');
+
+    console.log(textHtml.length - 1);
 }
 
 
@@ -64,3 +60,4 @@ function exs_4() {
         alert(url);
     }
 }
+
